@@ -1,0 +1,111 @@
+
+:root {
+    --azul-principal: #44749d; /* Títulos, Botões, Roteador, Destaques */
+    --azul-claro: #c6d4e1;     /* PCs, Hovers, Fundo claro */
+    --branco: #ffffff;         /* Fundo do Main, Textos claros */
+    --creme: #ebe7e0;          /* Fundo do Body, Linhas, Topologia */
+    --cinza: #bdb8ad;          /* Bordas, Detalhes, Servidor, Footer */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("img/Captura\ de\ tela\ 2026-08-13\ 183717.png");
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa quando o usuário rola a página */
+    /* ----------------------------------------- */
+    
+    color: #333333; /* Cor neutra para leitura dos textos */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 20px;
+    /* Gradiente ajustado usando tons do Azul Principal */
+    background-image: linear-gradient(rgba(68, 116, 157, 0.85), rgba(40, 70, 95, 0.9)), url("img/Captura de tela 2026-07-13 213726.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: var(--branco);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu a {
+    display: inline-block;  
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--azul-principal);
+    background-color: var(--azul-claro);
+    border-radius: 6px;
+}
+
+/* CONTEÚDO PRINCIPAL (MAIN) */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: -20px auto 40px auto;
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--cinza); /* Adicionado contorno sutil */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    /* Imagem de fundo com gradiente escuro por cima para destacar o texto */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Captura\ de\ tela\ 2026-08-12\ 211830.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: var(--branco);
+}
