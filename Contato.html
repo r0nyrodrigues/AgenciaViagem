@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicias Gourmets</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <header>
+    <button onclick="toggleMenu()">☰</button>
+    <div id="menuLateral" class="menu">
+      <a href="javascript:void(0)" class="fechar" onclick="toggleMenu()">&times;</a>
+      <a href="index.html">Cardapio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+      <a href="admin.html">Admin</a>
+    </div>
+    <h1>Delicias Gourmets</h1>
+ 
+  </header>
+
+   <main class="main-admin">
+        <div class="login">
+            <h1>Login</h1>
+            <form id="Form">
+                <div class="preencher">
+                    <input type="text" id="usuario" placeholder="Usuário" required>
+                </div>
+                <div class="preencher">
+                    <input type="password" id="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="mensagem"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
